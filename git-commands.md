@@ -2,7 +2,8 @@
 
 ## Clones the repo to local
 
-- `git clone <repo ssh>`
+- Using SSH (after SSH setup) -> `git clone <repo ssh>`
+- Using HTTPS (using personal access tokens) -> `git clone https://<git-token>@github.com/<username>/<repo-name>.git`
 
 ## Adding existing project folder to git
 
@@ -71,7 +72,7 @@
 ## Unstaging file(s)
 
 - `git reset .` - moves all the files from staged to unstaged state. DISCARDS any existing unstaged files (at least that is what the Google Bard says, but the vscode seems to be doing something that makes sure this does not happen)
-- `git restore --staged .` (SAFE) - unstages all changes in the working directory, but DOES NOT DISCARD any changes.
+- `git restore --staged <. OR individual files>` (SAFE) - unstages all changes, but DOES NOT DISCARD any changes.
 
 ## Committing changes
 
