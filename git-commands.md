@@ -78,10 +78,16 @@
 
 - `git commit -m "commit message here"`
 
+## Updating a commit message
+
+- `git commit --amend -m "corrected commit message"`
+
 ## Undo/revert a commit
 
-- `git reset --soft HEAD~n` - commit is removed and changes are preserved locally. Puts the changes back to the staged form which can be seen with the git status command. n = 1, 2, 3, etc. it represents the number of commits to reset to. Keep it at 1
-- `git reset --hard HEAD~1` - commit is removed and changes are not preserved
+- `git reset HEAD~n`        //  commit is removed and commit changes will be unstaged
+- `git reset --soft HEAD~n` //  commit is removed and commit changes will be staged
+- `git reset --hard HEAD~n` //  commit is removed and changes are not preserved
+- n = 1, 2, 3, etc. it represents the number of commits to reset to. 1 to revert the latest commit.
 
 ## Pull the latest changes from the remote branch
 
